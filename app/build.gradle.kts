@@ -1,18 +1,19 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    kotlin("kapt")
 }
 
 android {
     namespace = "com.defey.testcourse"
-    compileSdk = 36
+    compileSdk = Versions.compileSdk
 
     defaultConfig {
         applicationId = "com.defey.testcourse"
-        minSdk = 26
-        targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = Versions.minSdk
+        targetSdk = Versions.targetSdk
+        versionCode = Versions.versionCode
+        versionName = Versions.versionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -27,22 +28,49 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 }
 
 dependencies {
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    // Модули проекта
+    implementation(project(":features:auth"))
+    implementation(project(":features:main"))
+    implementation(project(":core"))
+    implementation(project(":data"))
+    implementation(project(":domain"))
+
+    // AndroidX
+    implementation(Libs.appCompat)
+    implementation(Libs.material)
+    implementation(Libs.constraintLayout)
+    implementation(Libs.navigationFragment)
+    implementation(Libs.navigationUi)
+    implementation(Libs.fragment)
+    implementation(Libs.lifecycleViewModel)
+    implementation(Libs.lifecycleLivedata)
+    implementation(Libs.lifecycleRuntime)
+
+    // Dagger 2
+    implementation(Libs.dagger)
+    implementation(Libs.daggerAndroid)
+    implementation(Libs.daggerAndroidSupport)
+    kapt(Libs.daggerCompiler)
+    kapt(Libs.daggerAndroidProcessor)
+    implementation(Libs.javaxInject)
+
+    // Test
+    testImplementation(Libs.junit)
+    androidTestImplementation(Libs.androidJunit)
+    androidTestImplementation(Libs.espresso)
 }
