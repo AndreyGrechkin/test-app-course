@@ -1,38 +1,33 @@
 object Versions {
     // Android
-    const val compileSdk = 34
-    const val minSdk = 24
-    const val targetSdk = 34
+    const val compileSdk = 36
+    const val minSdk = 26
+    const val targetSdk = 36
 
     const val versionCode = 1
     const val versionName = "1.0"
 
 
 
-    // Kotlin
-    const val kotlin = "1.9.0"
-    const val coroutines = "1.7.3"
+    const val kotlin = "2.2.10"
+    const val coroutines = "1.10.2"
 
-    // AndroidX
-    const val coreKtx = "1.12.0"
-    const val appCompat = "1.6.1"
-    const val material = "1.9.0"
-    const val constraintLayout = "2.1.4"
-    const val lifecycle = "2.6.2"
-    const val navigation = "2.7.2"
-    const val room = "2.5.2"
-    const val fragment = "1.6.1"
+    const val coreKtx = "1.17.0"
+    const val appCompat = "1.7.1"
+    const val material = "1.13.0"
+    const val constraintLayout = "2.2.1"
+    const val lifecycle = "2.9.3"
+    const val navigation = "2.9.3"
+    const val room = "2.7.2"
+    const val fragment = "1.8.9"
 
-    // Network
-    const val retrofit = "2.9.0"
-    const val okhttp = "4.11.0"
+    const val retrofit = "3.0.0"
+    const val okhttp = "5.1.0"
 
-    // DI
-    const val dagger = "2.47"
+    const val dagger = "2.57.1"
     const val javaxInject = "1"
 
-    // Test
     const val junit = "4.13.2"
-    const val androidJunit = "1.1.5"
-    const val espresso = "3.5.1"
+    const val androidJunit = "1.3.0"
+    const val espresso = "3.7.0"
 }

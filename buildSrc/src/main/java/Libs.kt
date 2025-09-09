@@ -15,7 +15,7 @@ object Libs {
     const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
     const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
     const val fragment = "androidx.fragment:fragment-ktx:${Versions.fragment}"
-    const val roomRuntime = "androidx.room:room-runtime:${Versions.room}"
+    const val roomRuntime = "androidx.room:room-runtime-android:${Versions.room}"
     const val roomKtx = "androidx.room:room-ktx:${Versions.room}"
     const val roomCompiler = "androidx.room:room-compiler:${Versions.room}"
 
