@@ -47,6 +47,7 @@ dependencies {
     implementation(project(":features:auth"))
     implementation(project(":features:main"))
     implementation(project(":core"))
+    implementation(project(":uicore"))
     implementation(project(":data"))
     implementation(project(":domain"))
 
@@ -68,6 +69,10 @@ dependencies {
     kapt(Libs.daggerCompiler)
     kapt(Libs.daggerAndroidProcessor)
     implementation(Libs.javaxInject)
+    implementation(Libs.javaxInject)
+
+    //Navigation
+    implementation(Libs.cicerone)
 
     // Test
     testImplementation(Libs.junit)

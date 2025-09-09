@@ -37,4 +37,5 @@ object Libs {
     const val junit = "junit:junit:${Versions.junit}"
     const val androidJunit = "androidx.test.ext:junit:${Versions.androidJunit}"
     const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso}"
+    const val cicerone = "com.github.terrakok:cicerone:${Versions.cicerone}"
 }

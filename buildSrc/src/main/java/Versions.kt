@@ -30,4 +30,6 @@ object Versions {
     const val junit = "4.13.2"
     const val androidJunit = "1.3.0"
     const val espresso = "3.7.0"
+
+    const val cicerone = "7.1"
 }

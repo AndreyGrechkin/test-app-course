@@ -28,6 +28,9 @@ dependencies {
     implementation(Libs.coreKtx)
     implementation(Libs.coroutinesAndroid)
 
+    //Navigation
+    implementation(Libs.cicerone)
+
     // DI
     implementation(Libs.dagger)
     implementation(Libs.javaxInject)

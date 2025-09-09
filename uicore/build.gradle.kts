@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.defey.testcourse.auth"
+    namespace = "com.defey.testcourse.uicore"
     compileSdk = Versions.compileSdk
 
     defaultConfig {
@@ -20,6 +20,7 @@ android {
 
     kotlinOptions {
         jvmTarget = "17"
+        freeCompilerArgs = listOf("-XXLanguage:+PropertyParamAnnotationDefaultTargetMode")
     }
 
     buildFeatures {
@@ -28,9 +29,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":domain"))
     implementation(project(":core"))
-    implementation(project(":uicore"))
 
     // AndroidX
     implementation(Libs.appCompat)

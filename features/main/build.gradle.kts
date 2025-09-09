@@ -30,6 +30,7 @@ android {
 dependencies {
     implementation(project(":domain"))
     implementation(project(":core"))
+    implementation(project(":uicore"))
 
     // AndroidX
     implementation(Libs.appCompat)
@@ -44,6 +45,9 @@ dependencies {
     implementation(Libs.dagger)
     kapt(Libs.daggerCompiler)
     implementation(Libs.javaxInject)
+
+    //Navigation
+    implementation(Libs.cicerone)
 
     // Coroutines
     implementation(Libs.coroutinesAndroid)
