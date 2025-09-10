@@ -13,7 +13,7 @@ import dagger.Component
     modules = [
         CoursesFlowModule::class,
         CoursesFlowComponentDependenciesModule::class,
-        FlowNavigationModule::class,
+        FlowNavigationModule::class
     ]
 )
 interface CoursesFlowComponent: MainScreenDependencies, FavoriteScreenDependencies  {

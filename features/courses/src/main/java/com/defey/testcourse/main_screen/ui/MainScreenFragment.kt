@@ -2,7 +2,6 @@ package com.defey.testcourse.main_screen.ui
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
@@ -13,10 +12,8 @@ import com.defey.testcourse.courses.databinding.FragmentMainScreenBinding
 import com.defey.testcourse.di.componentHolder
 import com.defey.testcourse.flows.BaseViewBindingFragment
 import com.defey.testcourse.main_screen.di.MainScreenComponentHolder
-import com.defey.testcourse.navigation.OnBackPressHandler
 import com.github.terrakok.cicerone.androidx.FragmentScreen
 import javax.inject.Inject
-import kotlin.getValue
 
 class MainScreenFragment : BaseViewBindingFragment<FragmentMainScreenBinding>() {
 
@@ -39,6 +36,10 @@ class MainScreenFragment : BaseViewBindingFragment<FragmentMainScreenBinding>() 
         savedInstanceState: Bundle?,
     ): FragmentMainScreenBinding {
         return FragmentMainScreenBinding.inflate(inflater, container, false)
+    }
+
+    override fun setupViews() {
+        viewModel.fetchInitData()
     }
 
     companion object {

@@ -24,7 +24,13 @@ android {
 
 dependencies {
     // Только самые базовые зависимости
+    implementation(project(":data"))
+    implementation(project(":core"))
     implementation(Libs.kotlinStdlib)
     implementation(Libs.coroutinesCore)
+    implementation(Libs.javaxInject)
+
+    // Dagger 2
+    implementation(Libs.dagger)
     implementation(Libs.javaxInject)
 }

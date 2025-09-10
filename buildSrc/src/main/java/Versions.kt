@@ -23,6 +23,7 @@ object Versions {
 
     const val retrofit = "3.0.0"
     const val okhttp = "5.1.0"
+    const val moshi = "1.15.2"
 
     const val dagger = "2.57.1"
     const val javaxInject = "1"

@@ -11,7 +11,7 @@ import javax.inject.Singleton
     modules = [
         ComponentDependenciesModule::class,
         AppModule::class,
-        DataModule::class,
+        NetworkModule::class,
         NavigationModule::class,
     ]
 )
@@ -29,5 +29,4 @@ interface AppComponent :  MainDependencies {
 
         fun build(): AppComponent
     }
-
 }

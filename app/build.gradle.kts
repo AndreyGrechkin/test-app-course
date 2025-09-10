@@ -74,6 +74,10 @@ dependencies {
     //Navigation
     implementation(Libs.cicerone)
 
+    //Network
+    implementation(Libs.okhttpLogging)
+    implementation(Libs.retrofit)
+
     // Test
     testImplementation(Libs.junit)
     androidTestImplementation(Libs.androidJunit)

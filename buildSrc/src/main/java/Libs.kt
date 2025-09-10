@@ -24,6 +24,7 @@ object Libs {
     const val retrofitGson = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
     const val okhttp = "com.squareup.okhttp3:okhttp:${Versions.okhttp}"
     const val okhttpLogging = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttp}"
+    const val moshi = "com.squareup.moshi:moshi-kotlin:${Versions.moshi}"
 
     // DI (Dagger 2)
     const val dagger = "com.google.dagger:dagger:${Versions.dagger}"

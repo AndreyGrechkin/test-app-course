@@ -24,8 +24,8 @@ android {
 }
 
 dependencies {
-    implementation(project(":domain"))
 
+    implementation(project(":core"))
     // AndroidX
     implementation(Libs.coreKtx)
     implementation(Libs.coroutinesAndroid)
@@ -35,6 +35,7 @@ dependencies {
     implementation(Libs.retrofitGson)
     implementation(Libs.okhttp)
     implementation(Libs.okhttpLogging)
+    implementation(Libs.moshi)
 
     // Database
     implementation(Libs.roomRuntime)

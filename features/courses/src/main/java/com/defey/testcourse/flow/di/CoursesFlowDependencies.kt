@@ -2,9 +2,9 @@ package com.defey.testcourse.flow.di
 
 import com.defey.testcourse.di.ComponentDependencies
 import com.defey.testcourse.flows.CommonFlowDependencies
-import com.defey.testcourse.navigation.AppFlowRouter
-import com.defey.testcourse.navigation.FlowRouter
+import com.defey.testcourse.use_cases.GetCourseUseCase
 
-interface CoursesFlowDependencies: ComponentDependencies, CommonFlowDependencies{
-//    val flowRouter: FlowRouter
+interface CoursesFlowDependencies : ComponentDependencies, CommonFlowDependencies {
+    val getCourseUseCase: GetCourseUseCase
+
 }
