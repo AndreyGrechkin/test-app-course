@@ -3,6 +3,7 @@ package com.defey.testcourse.di
 import com.defey.testcourse.navigation.AppFlowRouter
 import com.defey.testcourse.navigation.AppRootRouter
 import com.defey.testcourse.navigation.FlowRouter
+import com.defey.testcourse.navigation.RootScreenRouter
 import com.github.terrakok.cicerone.Cicerone
 import dagger.Module
 import dagger.Provides
@@ -12,7 +13,10 @@ class FlowNavigationModule {
 
     @FlowScope
     @Provides
-    fun provideCicerone(appRouter: AppRootRouter) = Cicerone.create(AppFlowRouter(appRouter))
+    fun provideCicerone(
+        appRouter: AppRootRouter,
+        rootScreenRouter: RootScreenRouter
+        ) = Cicerone.create(AppFlowRouter(appRouter, rootScreenRouter))
 
     @FlowScope
     @Provides

@@ -1,10 +1,8 @@
-package com.defey.testcourse.login.di
+package com.defey.testcourse.favorite_screen.di
 
 import androidx.lifecycle.ViewModelProvider
 import com.defey.testcourse.di.ComponentDependencies
 
-
-interface LoginDependencies : ComponentDependencies {
+interface FavoriteScreenDependencies: ComponentDependencies {
     val factory: ViewModelProvider.Factory
-
 }

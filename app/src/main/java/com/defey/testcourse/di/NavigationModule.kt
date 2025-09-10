@@ -1,7 +1,10 @@
 package com.defey.testcourse.di
 
+import com.defey.testcourse.navigate.RootScreenRouterImpl
 import com.defey.testcourse.navigation.AppRootRouter
+import com.defey.testcourse.navigation.RootScreenRouter
 import com.github.terrakok.cicerone.Cicerone
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

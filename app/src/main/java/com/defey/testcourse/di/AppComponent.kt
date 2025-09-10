@@ -2,18 +2,16 @@ package com.defey.testcourse.di
 
 import android.content.Context
 import com.defey.testcourse.App
-import com.defey.testcourse.flow.AuthFlowDependencies
 import dagger.BindsInstance
 import dagger.Component
-import di.MainModule
 import javax.inject.Singleton
 
 @Singleton
 @Component(
     modules = [
         ComponentDependenciesModule::class,
+        AppModule::class,
         DataModule::class,
-        MainModule::class,
         NavigationModule::class,
     ]
 )

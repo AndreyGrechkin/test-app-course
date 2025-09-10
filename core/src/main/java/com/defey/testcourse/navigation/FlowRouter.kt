@@ -21,4 +21,5 @@ interface FlowRouter {
     fun back()
     fun back(screen: Screen?)
     fun navigateToActivityByIntent(intent: Intent)
+    fun navigateNewRootScreen(screen: RootScreen)
 }

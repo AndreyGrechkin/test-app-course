@@ -45,7 +45,7 @@ dependencies {
 
     // Модули проекта
     implementation(project(":features:auth"))
-    implementation(project(":features:main"))
+    implementation(project(":features:courses"))
     implementation(project(":core"))
     implementation(project(":uicore"))
     implementation(project(":data"))

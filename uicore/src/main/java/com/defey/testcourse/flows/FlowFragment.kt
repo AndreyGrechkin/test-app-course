@@ -1,7 +1,6 @@
 package com.defey.testcourse.flows
 
 import android.os.Bundle
-import androidx.annotation.LayoutRes
 import com.defey.testcourse.navigation.AppRootRouter
 import com.defey.testcourse.navigation.OnBackPressHandler
 import com.defey.testcourse.navigation.setLaunchScreen

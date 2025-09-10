@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.defey.testcourse.main"
+    namespace = "com.defey.testcourse.courses"
     compileSdk = Versions.compileSdk
 
     defaultConfig {

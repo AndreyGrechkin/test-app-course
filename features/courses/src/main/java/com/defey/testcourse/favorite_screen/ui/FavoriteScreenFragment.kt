@@ -1,4 +1,4 @@
-package com.defey.testcourse.login.ui
+package com.defey.testcourse.favorite_screen.ui
 
 import android.content.Context
 import android.os.Bundle
@@ -8,20 +8,25 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
-import com.defey.testcourse.auth.databinding.FragmentLoginBinding
+import com.defey.testcourse.courses.databinding.FragmentFavoriteScreenBinding
+import com.defey.testcourse.courses.databinding.FragmentMainScreenBinding
 import com.defey.testcourse.di.componentHolder
+import com.defey.testcourse.favorite_screen.di.FavoriteScreenComponentHolder
 import com.defey.testcourse.flows.BaseViewBindingFragment
-import com.defey.testcourse.login.di.LoginComponentHolder
+import com.defey.testcourse.main_screen.di.MainScreenComponentHolder
+import com.defey.testcourse.main_screen.ui.MainScreenFragment
+import com.defey.testcourse.main_screen.ui.MainScreenViewModel
 import com.github.terrakok.cicerone.androidx.FragmentScreen
 import javax.inject.Inject
+import kotlin.getValue
 
-class LoginFragment : BaseViewBindingFragment<FragmentLoginBinding>() {
+class FavoriteScreenFragment : BaseViewBindingFragment<FragmentFavoriteScreenBinding>() {
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
-    private val viewModel by viewModels<LoginViewModel> { viewModelFactory }
+    private val viewModel by viewModels<FavoriteScreenViewModel> { viewModelFactory }
 
-    private val componentHolder by componentHolder<LoginComponentHolder>()
+    private val componentHolder by componentHolder<FavoriteScreenComponentHolder>()
 
     override fun onAttach(context: Context) {
         componentHolder.getDaggerComponent(this).inject(this)
@@ -34,20 +39,14 @@ class LoginFragment : BaseViewBindingFragment<FragmentLoginBinding>() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): FragmentLoginBinding {
-        return FragmentLoginBinding.inflate(inflater, container, false)
-    }
-
-    override fun setupListeners() {
-        binding.nextButton.setOnClickListener {
-            viewModel.handleEvent(LoginUiContract.Event.OnCourses)
-        }
+    ): FragmentFavoriteScreenBinding {
+        return FragmentFavoriteScreenBinding.inflate(inflater, container, false)
     }
 
     companion object {
         fun newInstance() = object : FragmentScreen {
             override fun createFragment(factory: FragmentFactory): Fragment {
-                return LoginFragment()
+                return FavoriteScreenFragment()
             }
         }
     }

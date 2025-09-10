@@ -7,7 +7,8 @@ import com.github.terrakok.cicerone.Screen
 import com.github.terrakok.cicerone.androidx.ActivityScreen
 
 class AppFlowRouter(
-    private val appRouter: Router
+    private val appRouter: Router,
+    private val  rootScreenRouter: RootScreenRouter
 ) : Router(), FlowRouter {
 
     override fun navigateInsideFlowTo(screen: Screen) {
@@ -44,5 +45,9 @@ class AppFlowRouter(
                 return intent
             }
         })
+    }
+
+    override fun navigateNewRootScreen(screen: RootScreen) {
+        rootScreenRouter.navigateNewRootScreen(screen)
     }
 }

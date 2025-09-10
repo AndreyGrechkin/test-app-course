@@ -1,20 +1,21 @@
-package com.defey.testcourse.flow
+package com.defey.testcourse.flow.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.defey.testcourse.di.FlowScope
 import com.defey.testcourse.di.ViewModelKey
+import com.defey.testcourse.favorite_screen.ui.FavoriteScreenViewModel
 import com.defey.testcourse.flows.AppViewModelFactory
 import com.defey.testcourse.flows.ViewModelProviders
-import com.defey.testcourse.login.ui.LoginViewModel
-import com.defey.testcourse.navigation.RootScreenRouter
+import com.defey.testcourse.main_screen.ui.MainScreenViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.multibindings.IntoMap
 
 @Module
-interface AuthFlowModule {
+interface CoursesFlowModule {
+
     companion object {
         @FlowScope
         @Provides
@@ -25,6 +26,11 @@ interface AuthFlowModule {
 
     @Binds
     @IntoMap
-    @ViewModelKey(LoginViewModel::class)
-    fun bindLoginViewModel(vm: LoginViewModel): ViewModel
+    @ViewModelKey(MainScreenViewModel::class)
+    fun bindMainScreenViewModel(vm: MainScreenViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(FavoriteScreenViewModel::class)
+    fun bindFavoriteScreenViewModel(vm: FavoriteScreenViewModel): ViewModel
 }
