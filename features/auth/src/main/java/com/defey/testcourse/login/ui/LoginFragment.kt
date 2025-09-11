@@ -39,7 +39,7 @@ class LoginFragment : BaseViewBindingFragment<FragmentLoginBinding>() {
     }
 
     override fun setupListeners() {
-        binding.nextButton.setOnClickListener {
+        binding.signInButton.setOnClickListener {
             viewModel.handleEvent(LoginUiContract.Event.OnCourses)
         }
     }

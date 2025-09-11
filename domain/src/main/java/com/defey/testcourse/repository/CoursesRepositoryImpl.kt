@@ -4,6 +4,7 @@ import com.defey.testcourse.network.NetworkResult
 import com.defey.testcourse.api_service.CoursesApi
 import com.defey.testcourse.dto.CourseDto
 import com.defey.testcourse.model.Course
+import com.defey.testcourse.utils.parseDate
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
@@ -27,8 +28,8 @@ class CoursesRepositoryImpl @Inject constructor(
             text = this.text,
             price = this.price,
             rate = this.rate,
-            startDate = this.startDate,
+            startDate = parseDate(this.startDate) ,
             hasLike = this.hasLike,
-            publishDate = this.publishDate,
+            publishDate = parseDate(this.publishDate),
         )
 }

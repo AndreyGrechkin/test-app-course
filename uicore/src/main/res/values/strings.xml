@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_title">Вход</string>
+    <string name="login_email_title">Email</string>
+    <string name="login_email_hint">example@gmail.com</string>
+    <string name="login_password_title">Пароль</string>
+    <string name="login_password_hint">Введите пароль</string>
+    <string name="login_button_tittle">Вход</string>
+    <string name="login_not_profile_tittle">Нет аккаунта?</string>
+    <string name="login_auth_text_button_tittle">Регистрация</string>
+    <string name="login_forgot_password_text_button_tittle">Забыл пароль</string>
+    <string name="courses_search_hint">Search courses...</string>
+    <string name="courses_sort_title">По дате добавления</string>
+    <string name="courses_card_more_button_title">Подробнее</string>
+    <string name="favorite_title">Избранное</string>
+    <string name="navigation_home_title">Главная</string>
+    <string name="navigation_favorite_title">Избранное</string>
+    <string name="navigation_profile_title">Аккаунт</string>
+</resources>
