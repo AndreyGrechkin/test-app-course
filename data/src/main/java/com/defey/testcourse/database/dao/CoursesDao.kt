@@ -13,7 +13,7 @@ interface CoursesDao {
     suspend fun upsertCourse(course: CourseEntity)
 
     @Query(value = "DELETE FROM course WHERE id = :id")
-    suspend fun deleteCourseWithId(id: String)
+    suspend fun deleteCourseWithId(id: Int)
 
 
     @Query(value = "SELECT * FROM course")

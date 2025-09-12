@@ -1,5 +1,7 @@
 package com.defey.testcourse.main_screen.ui
 
+import com.defey.testcourse.flow.ui.CourseItemCellViewDisplayItem
+
 class MainScreenUiContract {
 
     sealed class Event {

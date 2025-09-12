@@ -27,3 +27,5 @@ fun formatPriceClean(priceString: String, locale: Locale = Locale.forLanguageTag
     format.maximumFractionDigits = 0
     return format.format(priceNumber)
 }
+
+fun String.onlyDigits(): String = this.filter { it.isDigit() }.trim()

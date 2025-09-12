@@ -9,9 +9,9 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
-class CoursesRepositoryImpl @Inject constructor(
+class CoursesApiRepositoryImpl @Inject constructor(
     private val coursesApi: CoursesApi,
-) : CoursesRepository {
+) : CoursesApiRepository {
 
     override suspend fun getCourses(): NetworkResult<List<Course>> = withContext(Dispatchers.IO) {
         return@withContext try {

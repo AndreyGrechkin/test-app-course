@@ -15,6 +15,8 @@ import com.defey.testcourse.adapter.binderAdapterOf
 import com.defey.testcourse.adapter.updateItems
 import com.defey.testcourse.courses.databinding.FragmentMainScreenBinding
 import com.defey.testcourse.di.componentHolder
+import com.defey.testcourse.flow.ui.CourseItemCellViewDisplayItem
+import com.defey.testcourse.flow.ui.CourseItemCellViewHolderFactory
 import com.defey.testcourse.flows.BaseViewBindingFragment
 import com.defey.testcourse.main_screen.di.MainScreenComponentHolder
 import com.github.terrakok.cicerone.androidx.FragmentScreen

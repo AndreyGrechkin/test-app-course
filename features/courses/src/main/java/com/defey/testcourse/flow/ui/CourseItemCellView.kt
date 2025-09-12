@@ -1,4 +1,4 @@
-package com.defey.testcourse.main_screen.ui
+package com.defey.testcourse.flow.ui
 
 import android.content.Context
 import android.util.AttributeSet
@@ -36,7 +36,7 @@ class CourseItemCellView @JvmOverloads constructor(
     fun configureWith(item: CourseItemCellViewDisplayItem) {
         titleTextView.text = item.title
         descriptionTextView.text = item.text
-        dateTextView.text = item.startDate
+        dateTextView.text = item.displayStartDate
         rateTextView.text = item.rate
         priceTextView.text = item.price
         favoriteButton.setImageResource(

@@ -13,6 +13,7 @@ import com.defey.testcourse.database.entities.CourseEntity
     exportSchema = true
 )
 @TypeConverters(
+    LocalDateTypeConverter::class,
 )
 abstract class AppDatabase : RoomDatabase() {
     abstract fun coursesDao(): CoursesDao

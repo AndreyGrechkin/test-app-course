@@ -1,4 +1,4 @@
-package com.defey.testcourse.main_screen.ui
+package com.defey.testcourse.flow.ui
 
 import android.view.ViewGroup
 import android.widget.FrameLayout
