@@ -24,7 +24,6 @@ class LoginFragment : BaseViewBindingFragment<FragmentLoginBinding>() {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
     private val viewModel by viewModels<LoginViewModel> { viewModelFactory }
-
     private val componentHolder by componentHolder<LoginComponentHolder>()
 
     override fun onAttach(context: Context) {

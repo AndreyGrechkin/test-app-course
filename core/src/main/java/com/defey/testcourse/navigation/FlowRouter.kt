@@ -8,7 +8,7 @@ import com.github.terrakok.cicerone.Screen
 interface FlowRouter {
     fun setResultListener(
         key: String,
-        listener: ResultListener
+        listener: ResultListener,
     ): ResultListenerHandler
 
     fun sendResult(key: String, data: Any)

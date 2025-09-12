@@ -29,7 +29,6 @@ class FavoriteScreenFragment : BaseViewBindingFragment<FragmentFavoriteScreenBin
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
     private val viewModel by viewModels<FavoriteScreenViewModel> { viewModelFactory }
-
     private val componentHolder by componentHolder<FavoriteScreenComponentHolder>()
 
     override fun onAttach(context: Context) {
@@ -37,7 +36,6 @@ class FavoriteScreenFragment : BaseViewBindingFragment<FragmentFavoriteScreenBin
 
         super.onAttach(context)
     }
-
 
     override fun inflateView(
         inflater: LayoutInflater,

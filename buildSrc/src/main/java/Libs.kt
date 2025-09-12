@@ -1,18 +1,23 @@
 object Libs {
     // Kotlin
     const val kotlinStdlib = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
-    const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
-    const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
+    const val coroutinesCore =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
+    const val coroutinesAndroid =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
 
     // AndroidX
     const val coreKtx = "androidx.core:core-ktx:${Versions.coreKtx}"
     const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
     const val material = "com.google.android.material:material:${Versions.material}"
-    const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
-    const val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
+    const val constraintLayout =
+        "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+    const val lifecycleViewModel =
+        "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
     const val lifecycleLivedata = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
     const val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
-    const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
+    const val navigationFragment =
+        "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
     const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
     const val fragment = "androidx.fragment:fragment-ktx:${Versions.fragment}"
     const val roomRuntime = "androidx.room:room-runtime-android:${Versions.room}"
@@ -31,7 +36,8 @@ object Libs {
     const val daggerCompiler = "com.google.dagger:dagger-compiler:${Versions.dagger}"
     const val daggerAndroid = "com.google.dagger:dagger-android:${Versions.dagger}"
     const val daggerAndroidSupport = "com.google.dagger:dagger-android-support:${Versions.dagger}"
-    const val daggerAndroidProcessor = "com.google.dagger:dagger-android-processor:${Versions.dagger}"
+    const val daggerAndroidProcessor =
+        "com.google.dagger:dagger-android-processor:${Versions.dagger}"
     const val javaxInject = "javax.inject:javax.inject:${Versions.javaxInject}"
 
     // Test

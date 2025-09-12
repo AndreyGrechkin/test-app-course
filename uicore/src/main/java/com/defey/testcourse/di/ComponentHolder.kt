@@ -11,15 +11,11 @@ open class ComponentHolder<out T : Any, in A>(private val creator: (A) -> T) : V
     private var component: T? = null
 
     fun getDaggerComponent(arg: A): T = component ?: creator(arg).also {
-        synchronized(this) {
-            component = it
-        }
+        synchronized(this) { component = it }
     }
 
     fun clear() {
-        synchronized(this) {
-            component = null
-        }
+        synchronized(this) { component = null }
     }
 
     override fun onCleared() {

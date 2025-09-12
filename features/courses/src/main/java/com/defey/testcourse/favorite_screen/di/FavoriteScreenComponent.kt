@@ -5,7 +5,7 @@ import dagger.Component
 
 @Component(
     dependencies = [FavoriteScreenDependencies::class],
-    modules = [FavoriteScreenModule::class]
+    modules = []
 )
 interface FavoriteScreenComponent {
 

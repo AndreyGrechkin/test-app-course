@@ -16,7 +16,7 @@ import dagger.Component
         FlowNavigationModule::class
     ]
 )
-interface CoursesFlowComponent: MainScreenDependencies, FavoriteScreenDependencies  {
+interface CoursesFlowComponent : MainScreenDependencies, FavoriteScreenDependencies {
 
     @Component.Factory
     interface Factory {

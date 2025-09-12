@@ -15,8 +15,8 @@ class FlowNavigationModule {
     @Provides
     fun provideCicerone(
         appRouter: AppRootRouter,
-        rootScreenRouter: RootScreenRouter
-        ) = Cicerone.create(AppFlowRouter(appRouter, rootScreenRouter))
+        rootScreenRouter: RootScreenRouter,
+    ) = Cicerone.create(AppFlowRouter(appRouter, rootScreenRouter))
 
     @FlowScope
     @Provides

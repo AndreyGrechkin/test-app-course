@@ -5,7 +5,7 @@ import dagger.Component
 
 @Component(
     dependencies = [LoginDependencies::class],
-    modules = [LoginModule::class]
+    modules = []
 )
 interface LoginComponent {
 

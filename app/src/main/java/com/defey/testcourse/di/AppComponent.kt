@@ -11,13 +11,12 @@ import javax.inject.Singleton
 @Component(
     modules = [
         ComponentDependenciesModule::class,
-        AppModule::class,
         NetworkModule::class,
         NavigationModule::class,
         DatabaseModule::class
     ]
 )
-interface AppComponent :  MainDependencies {
+interface AppComponent : MainDependencies {
 
     fun inject(application: App)
 

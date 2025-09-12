@@ -7,7 +7,6 @@ import com.defey.testcourse.di.ViewModelKey
 import com.defey.testcourse.flows.AppViewModelFactory
 import com.defey.testcourse.flows.ViewModelProviders
 import com.defey.testcourse.login.ui.LoginViewModel
-import com.defey.testcourse.navigation.RootScreenRouter
 import dagger.Binds
 import dagger.Module
 import dagger.Provides

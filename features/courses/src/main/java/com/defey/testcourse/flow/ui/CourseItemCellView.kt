@@ -25,7 +25,6 @@ class CourseItemCellView @JvmOverloads constructor(
         get() = findViewById(R.id.rate_text_view)
     private val priceTextView: AppCompatTextView
         get() = findViewById(R.id.price_text_view)
-
     private val favoriteButton: AppCompatImageButton
         get() = findViewById(R.id.favorite_button)
 

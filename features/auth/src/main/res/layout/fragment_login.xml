@@ -52,8 +52,8 @@
         android:background="@drawable/edit_text_light_gray_rounded_bg"
         android:hint="@string/login_password_hint"
         android:paddingHorizontal="16dp"
-        android:textColor="@color/white"
         android:textAppearance="@style/BodyMedium"
+        android:textColor="@color/white"
         android:textColorHint="@color/white_50" />
 
     <com.google.android.material.button.MaterialButton

@@ -28,7 +28,7 @@ class CoursesApiRepositoryImpl @Inject constructor(
             text = this.text,
             price = this.price,
             rate = this.rate,
-            startDate = parseDate(this.startDate) ,
+            startDate = parseDate(this.startDate),
             hasLike = this.hasLike,
             publishDate = parseDate(this.publishDate),
         )

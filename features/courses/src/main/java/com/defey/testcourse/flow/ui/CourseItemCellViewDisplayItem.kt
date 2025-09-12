@@ -5,7 +5,6 @@ import com.defey.testcourse.model.Course
 import com.defey.testcourse.utils.formatDateToString
 import com.defey.testcourse.utils.formatPriceClean
 import com.defey.testcourse.utils.onlyDigits
-import com.defey.testcourse.utils.parseDate
 import java.time.LocalDate
 
 data class CourseItemCellViewDisplayItem(
@@ -20,7 +19,7 @@ data class CourseItemCellViewDisplayItem(
     val publishDate: LocalDate?,
 ) : BindableRecyclerDisplayItem
 
- fun CourseItemCellViewDisplayItem.toCourse(): Course =
+fun CourseItemCellViewDisplayItem.toCourse(): Course =
     Course(
         id = this.id,
         title = this.title,

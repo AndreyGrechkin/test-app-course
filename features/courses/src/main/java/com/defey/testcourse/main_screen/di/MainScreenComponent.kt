@@ -5,7 +5,7 @@ import dagger.Component
 
 @Component(
     dependencies = [MainScreenDependencies::class],
-    modules = [MainScreenModule::class]
+    modules = []
 )
 interface MainScreenComponent {
 

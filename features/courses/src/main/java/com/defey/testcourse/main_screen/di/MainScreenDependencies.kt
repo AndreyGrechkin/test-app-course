@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.defey.testcourse.di.ComponentDependencies
 
 
-interface MainScreenDependencies: ComponentDependencies {
+interface MainScreenDependencies : ComponentDependencies {
     val factory: ViewModelProvider.Factory
 
 }

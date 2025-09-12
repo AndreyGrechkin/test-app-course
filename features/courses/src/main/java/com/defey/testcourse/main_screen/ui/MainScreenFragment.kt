@@ -29,7 +29,6 @@ class MainScreenFragment : BaseViewBindingFragment<FragmentMainScreenBinding>() 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
     private val viewModel by viewModels<MainScreenViewModel> { viewModelFactory }
-
     private val componentHolder by componentHolder<MainScreenComponentHolder>()
 
     override fun onAttach(context: Context) {
@@ -37,7 +36,6 @@ class MainScreenFragment : BaseViewBindingFragment<FragmentMainScreenBinding>() 
 
         super.onAttach(context)
     }
-
 
     override fun inflateView(
         inflater: LayoutInflater,

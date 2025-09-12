@@ -8,11 +8,11 @@ import com.defey.testcourse.navigation.RootScreenRouter
 import jakarta.inject.Inject
 
 class RootScreenRouterImpl @Inject constructor(
-    private val router: AppRootRouter
-): RootScreenRouter {
+    private val router: AppRootRouter,
+) : RootScreenRouter {
 
     override fun navigateNewRootScreen(screen: RootScreen) {
-        when(screen){
+        when (screen) {
             RootScreen.AUTH_SCREEN -> router.newRootScreen(AuthFlowFragment.newInstance())
             RootScreen.COURSES_SCREEN -> router.newRootScreen(CoursesFlowFragment.newInstance())
         }
